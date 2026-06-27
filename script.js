@@ -147,6 +147,10 @@ totalCount.innerText = data.length;
 checkButton.classList.remove("loading");
 checkText.innerText = "нэвтрэх";
 
+localStorage.setItem("loggedIn", "true");
+localStorage.setItem("phone", phone);
+
+
 profilePhone.innerText = phone;
 
 loginScreen.style.display = "none";
@@ -165,6 +169,8 @@ profileScreen.style.display = "block";
 // ==========================================
 
 logoutBtn.onclick = function () {
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("phone");
 
 profileScreen.style.display = "none";
 
@@ -198,3 +204,19 @@ logoContainer.classList.remove("logo-hide");
 },1500);
 
 },6000);
+
+
+window.onload = function () {
+
+const savedPhone = localStorage.getItem("phone");
+const loggedIn = localStorage.getItem("loggedIn");
+
+if (loggedIn === "true" && savedPhone) {
+
+phoneInput.value = savedPhone;
+
+checkButton.click();
+
+}
+
+};

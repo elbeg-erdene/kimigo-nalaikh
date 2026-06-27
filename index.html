@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ELBEG CARGO</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="app-container">
+
+<!-- =========================
+LOGIN SCREEN
+========================== -->
+
+<section id="loginScreen">
+
+<!-- Logo Area -->
+
+<div class="logo-container">
+
+<img
+src="images/elbeg-logo.jpg"
+id="elbegLogo"
+class="logo"
+alt="Elbeg Cargo">
+
+<img
+src="images/kimigo-logo.jpg"
+id="kimigoLogo"
+class="logo"
+alt="Kimigo">
+
+</div>
+
+
+<!-- Phone Input -->
+
+<div class="phone-container">
+
+<input
+id="phoneInput"
+type="tel"
+maxlength="8"
+autocomplete="off"
+placeholder="Утасны дугаараа оруулна уу">
+
+</div>
+
+
+<!-- Check Button -->
+
+<div class="button-container">
+
+<button id="checkButton">
+
+<span id="checkText">
+
+Ачаа шалгах
+
+</span>
+
+</button>
+
+</div>
+<!-- Free / Paid Address Buttons -->
+
+<div class="address-container">
+
+<button
+id="freeAddressBtn"
+class="menu-button">
+
+Үнэгүй карго<br>
+хаяг холбох
+
+</button>
+
+<button
+id="paidAddressBtn"
+class="menu-button">
+
+Төлбөртэй карго<br>
+хаяг холбох
+
+</button>
+
+</div>
+
+
+<!-- Social Icons -->
+
+<div class="social-container">
+
+<a
+href="https://www.facebook.com/share/1DVRCTTLTb/"
+target="_blank">
+
+<img
+src="images/facebook.png"
+class="social-icon"
+alt="Facebook">
+
+</a>
+
+<a
+href="https://maps.app.goo.gl/TFFALd2RkNh4RqWW8?g_st=ac"
+target="_blank">
+
+<img
+src="images/map.png"
+class="social-icon"
+alt="Google Map">
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- =========================================
+PROFILE SCREEN
+========================================== -->
+
+<section
+id="profileScreen"
+style="display:none;">
+
+
+<!-- USER PHONE -->
+
+<div class="user-phone">
+
+<span>
+
+Хэрэглэгчийн утас :
+
+</span>
+
+<span id="profilePhone">
+
+00000000
+
+</span>
+
+</div>
+
+
+
+<!-- NOTIFICATION BOX -->
+
+<div
+id="notificationBox">
+
+Энд notification sheet-ийн мэдээлэл гарна.
+
+</div>
+<!-- =========================
+Cargo Information
+========================== -->
+
+<div class="cargo-wrapper">
+
+<div class="cargo-box">
+
+<div class="cargo-title">
+
+Танд ирсэн бараа
+
+</div>
+
+<div
+id="barcodeList"
+class="barcode-list">
+
+</div>
+
+</div>
+
+
+
+<div class="count-box">
+
+<div class="cargo-title">
+
+Нийт тоо
+
+</div>
+
+<div
+id="totalCount"
+class="total-count">
+
+0
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- =========================
+Bottom Buttons
+========================== -->
+
+<div class="bottom-buttons">
+
+<button
+id="deliveryBtn">
+
+Хүргэлтэнд бүртгүүлэх
+
+</button>
+
+
+
+<button
+id="homeBtn">
+
+www.elbegcargo.com
+
+</button>
+
+</div>
+
+
+
+
+<!-- Logout -->
+
+<div class="logout-area">
+
+<button
+id="logoutBtn">
+
+Гарах
+
+</button>
+
+</div>
+
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<div class="footer-text">
+
+<p>
+
+Хаяг : 2-р хороо
+Хөдөлмөр халамжийн
+(Татварын хэлтэс цэнхэр байр)
+арын 6 давхар байр.
+
+</p>
+
+<p>
+
+123-р цэцэрлэгийн хажууд
+
+</p>
+
+<p>
+
+Цагийн хуваарь
+
+</p>
+
+<p>
+
+Даваа - Баасан
+11:00 - 19:00
+
+</p>
+
+<p>
+
+Бямба - Ням
+11:00 - 17:00
+
+</p>
+
+</div>
+
+</footer>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

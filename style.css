@@ -1,0 +1,867 @@
+/* ==========================================
+ELBEG CARGO
+STYLE.CSS
+Version 1.0
+========================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#e9ecef;
+
+font-family:Arial, Helvetica, sans-serif;
+
+display:flex;
+
+justify-content:center;
+
+padding:25px;
+
+}
+
+/* ============================= */
+
+.app-container{
+
+width:100%;
+
+max-width:440px;
+
+background:white;
+
+border-radius:18px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+overflow:hidden;
+
+min-height:100vh;
+
+}
+
+/* ============================= */
+
+#loginScreen{
+
+padding:25px;
+
+}
+
+/* ============================= */
+
+.logo-container{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:25px;
+
+margin-top:10px;
+
+margin-bottom:30px;
+
+}
+
+/* ============================= */
+
+.logo{
+
+transition:.5s;
+
+object-fit:contain;
+
+}
+
+/* Elbeg */
+
+#elbegLogo{
+
+width:145px;
+
+}
+
+/* Kimigo */
+
+#kimigoLogo{
+
+width:95px;
+
+}
+
+/* ============================= */
+
+.phone-container{
+
+margin-bottom:20px;
+
+}
+
+/* ============================= */
+
+#phoneInput{
+
+width:100%;
+
+height:55px;
+
+border:none;
+
+outline:none;
+
+border-radius:12px;
+
+background:#f3f5f7;
+
+font-size:17px;
+
+text-align:center;
+
+padding:0 15px;
+
+box-shadow:
+inset 0 2px 5px rgba(0,0,0,.08);
+
+}
+
+/* ============================= */
+
+.button-container{
+
+margin-bottom:20px;
+
+}
+
+/* ============================= */
+
+#checkButton{
+
+width:100%;
+
+height:55px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+background:#2f9e44;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+box-shadow:
+
+0 6px 12px rgba(0,0,0,.25);
+
+transition:.25s;
+
+}
+
+#checkButton:hover{
+
+transform:translateY(-2px);
+
+}
+
+#checkButton:active{
+
+transform:scale(.98);
+
+}
+
+/* ======================================
+ADDRESS BUTTONS
+====================================== */
+
+.address-container{
+
+display:flex;
+
+gap:15px;
+
+margin-bottom:30px;
+
+}
+
+.menu-button{
+
+flex:1;
+
+height:68px;
+
+border:none;
+
+border-radius:12px;
+
+background:#2f9e44;
+
+color:white;
+
+font-size:15px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:
+
+0 6px 12px rgba(0,0,0,.22);
+
+transition:.25s;
+
+line-height:22px;
+
+}
+
+.menu-button:hover{
+
+transform:translateY(-2px);
+
+}
+
+.menu-button:active{
+
+transform:scale(.97);
+
+}
+
+/* ======================================
+SOCIAL
+====================================== */
+
+.social-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:35px;
+
+margin-top:10px;
+
+margin-bottom:10px;
+
+}
+
+.social-container a{
+
+width:52px;
+
+height:52px;
+
+border-radius:50%;
+
+background:#f3f5f7;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-decoration:none;
+
+box-shadow:
+
+0 5px 10px rgba(0,0,0,.18);
+
+transition:.25s;
+
+}
+
+.social-container a:hover{
+
+transform:translateY(-3px);
+
+}
+
+.social-icon{
+
+width:28px;
+
+height:28px;
+
+}
+
+/* ======================================
+PROFILE
+====================================== */
+
+#profileScreen{
+
+padding:22px;
+
+}
+
+.user-phone{
+
+font-size:17px;
+
+font-weight:bold;
+
+text-align:center;
+
+margin-bottom:18px;
+
+}
+
+#profilePhone{
+
+color:#2f9e44;
+
+}
+
+#notificationBox{
+
+width:100%;
+
+min-height:120px;
+
+background:#fffbe8;
+
+border:2px solid #ffe58f;
+
+border-radius:12px;
+
+padding:15px;
+
+margin-bottom:25px;
+
+overflow:auto;
+
+}
+/* ======================================
+CARGO WRAPPER
+====================================== */
+
+.cargo-wrapper{
+
+display:flex;
+
+gap:15px;
+
+margin-bottom:25px;
+
+}
+
+/* ========================== */
+
+.cargo-box{
+
+flex:3;
+
+background:#ffffff;
+
+border-radius:14px;
+
+box-shadow:
+0 5px 12px rgba(0,0,0,.12);
+
+overflow:hidden;
+
+}
+
+/* ========================== */
+
+.count-box{
+
+flex:1;
+
+background:#ffffff;
+
+border-radius:14px;
+
+box-shadow:
+0 5px 12px rgba(0,0,0,.12);
+
+overflow:hidden;
+
+}
+
+/* ========================== */
+
+.cargo-title{
+
+background:#2f9e44;
+
+color:white;
+
+font-size:15px;
+
+font-weight:bold;
+
+text-align:center;
+
+padding:12px;
+
+}
+
+/* ========================== */
+
+.barcode-list{
+
+height:280px;
+
+overflow-y:auto;
+
+padding:15px;
+
+font-size:15px;
+
+line-height:28px;
+
+}
+
+/* ========================== */
+
+.total-count{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:280px;
+
+font-size:45px;
+
+color:#2f9e44;
+
+font-weight:bold;
+
+}
+
+/* ======================================
+BOTTOM BUTTONS
+====================================== */
+
+.bottom-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin-bottom:20px;
+
+}
+
+/* ========================== */
+
+#deliveryBtn,
+#homeBtn,
+#logoutBtn{
+
+width:100%;
+
+height:55px;
+
+border:none;
+
+border-radius:12px;
+
+background:#2f9e44;
+
+color:white;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:
+0 6px 12px rgba(0,0,0,.22);
+
+transition:.25s;
+
+}
+
+#deliveryBtn:hover,
+#homeBtn:hover,
+#logoutBtn:hover{
+
+transform:translateY(-2px);
+
+}
+
+#deliveryBtn:active,
+#homeBtn:active,
+#logoutBtn:active{
+
+transform:scale(.98);
+
+}
+
+/* ========================== */
+
+.logout-area{
+
+margin-bottom:25px;
+
+}
+
+/* ======================================
+FOOTER
+====================================== */
+
+.footer-text{
+
+background:#f6f6f6;
+
+border-radius:12px;
+
+padding:18px;
+
+font-size:14px;
+
+line-height:24px;
+
+color:#444;
+
+text-align:center;
+
+}
+/* ==========================================
+LOGO ANIMATION
+========================================== */
+
+.logo{
+
+animation: logoFloat 4s ease-in-out infinite;
+
+}
+
+#kimigoLogo{
+
+animation-delay:2s;
+
+}
+
+@keyframes logoFloat{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(.92);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ==========================================
+PHONE INPUT
+========================================== */
+
+#phoneInput:focus{
+
+background:#ffffff;
+
+box-shadow:
+
+0 0 0 3px rgba(47,158,68,.25),
+
+0 5px 15px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+BUTTON
+========================================== */
+
+.menu-button,
+#checkButton,
+#deliveryBtn,
+#homeBtn,
+#logoutBtn{
+
+transition:
+
+.25s ease;
+
+}
+
+.menu-button:hover,
+#checkButton:hover,
+#deliveryBtn:hover,
+#homeBtn:hover,
+#logoutBtn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.menu-button:active,
+#checkButton:active,
+#deliveryBtn:active,
+#homeBtn:active,
+#logoutBtn:active{
+
+transform:scale(.97);
+
+}
+
+/* ==========================================
+SCROLLBAR
+========================================== */
+
+.barcode-list::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+.barcode-list::-webkit-scrollbar-thumb{
+
+background:#2f9e44;
+
+border-radius:20px;
+
+}
+
+.barcode-list::-webkit-scrollbar-track{
+
+background:#ececec;
+
+}
+
+/* ==========================================
+FOOTER
+========================================== */
+
+.footer-text p{
+
+margin-bottom:8px;
+
+}
+
+.footer-text p:last-child{
+
+margin-bottom:0;
+
+}
+
+/* ==========================================
+MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+body{
+
+padding:10px;
+
+}
+
+.app-container{
+
+max-width:100%;
+
+border-radius:0;
+
+min-height:100vh;
+
+}
+
+#elbegLogo{
+
+width:125px;
+
+}
+
+#kimigoLogo{
+
+width:85px;
+
+}
+
+}
+
+/* ==========================================
+DESKTOP
+========================================== */
+
+@media(min-width:900px){
+
+body{
+
+padding:40px;
+
+}
+
+}
+/* ==========================================
+LOADING BUTTON
+========================================== */
+
+.loading{
+
+pointer-events:none;
+
+opacity:.85;
+
+}
+
+.loading::after{
+
+content:"";
+
+width:18px;
+
+height:18px;
+
+margin-left:10px;
+
+display:inline-block;
+
+border:3px solid rgba(255,255,255,.4);
+
+border-top:3px solid #fff;
+
+border-radius:50%;
+
+animation:spin .8s linear infinite;
+
+vertical-align:middle;
+
+}
+
+@keyframes spin{
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ==========================================
+BARCODE ITEM
+========================================== */
+
+.barcode-item{
+
+padding:10px 0;
+
+border-bottom:1px solid #ececec;
+
+font-size:15px;
+
+word-break:break-all;
+
+}
+
+.barcode-item:last-child{
+
+border-bottom:none;
+
+}
+
+/* ==========================================
+NOT REGISTERED USER
+========================================== */
+
+.not-found{
+
+color:#d32f2f;
+
+font-size:16px;
+
+font-weight:bold;
+
+text-align:center;
+
+padding:25px 10px;
+
+line-height:28px;
+
+}
+
+/* ==========================================
+HIDE
+========================================== */
+
+.hidden{
+
+display:none !important;
+
+}
+/* ==========================================
+SMOOTH SCREEN
+========================================== */
+
+#loginScreen,
+#profileScreen{
+
+animation:fadeIn .35s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(15px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+LINK BUTTON
+========================================== */
+
+#homeBtn{
+
+text-decoration:none;
+
+}
+
+/* ==========================================
+SELECT
+========================================== */
+
+::selection{
+
+background:#2f9e44;
+
+color:#fff;
+
+}
+

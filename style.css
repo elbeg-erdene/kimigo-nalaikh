@@ -289,9 +289,9 @@ transform:translateY(-3px);
 
 .social-icon{
 
-width:28px;
+width:40px;
 
-height:28px;
+height:40px;
 
 }
 
@@ -329,9 +329,9 @@ width:100%;
 
 min-height:120px;
 
-background:#fffbe8;
+background:#f0fff4;
 
-border:2px solid #ffe58f;
+border:2px solid #28a745;
 
 border-radius:12px;
 
@@ -340,8 +340,11 @@ padding:15px;
 margin-bottom:25px;
 
 overflow:auto;
+box-shadow: 0 6px 14px rgba(0, 150,80,0.25);
+box-shadow: 0 6px 14px   rgba(0,0,0,0.12), 0-2px 0 rgba(255,255,255,0.6) inset;
 
 }
+
 /* ======================================
 CARGO WRAPPER
 ====================================== */
@@ -772,8 +775,8 @@ padding:10px 0;
 border-bottom:1px solid #ececec;
 
 font-size:15px;
-
-word-break:break-all;
+color: #2f2c2c;
+font-weight:500;
 
 }
 
@@ -865,3 +868,23 @@ color:#fff;
 
 }
 
+
+
+/* ===========================
+LOGO ANIMATION
+=========================== */
+
+.logo-container{
+
+transition:transform 1.5s ease,
+opacity 1.5s ease;
+
+}
+
+.logo-hide{
+
+transform:scale(0);
+
+opacity:0;
+
+}

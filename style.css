@@ -377,55 +377,6 @@ padding:22px;
 }
 
 
-/* =================================
-   АЛДАНГИЙН ТАЙЛБАРЫН ТОВЧ
-   ================================= */
-
-.penalty-button-area {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 12px;
-    margin-bottom: 0;
-}
-
-.penalty-button {
-    background: linear-gradient(180deg, #69c52b, #58b51e);
-    color: white;
-
-    border: none;
-    border-radius: 8px;
-
-    padding: 12px 18px;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 5px 10px rgba(0,0,0,.18),
-        inset 0 1px 0 rgba(255,255,255,.35);
-
-    transition: all .15s ease;
-}
-
-.penalty-button:hover {
-    transform: translateY(-1px);
-
-    box-shadow:
-        0 7px 14px rgba(0,0,0,.22),
-        inset 0 1px 0 rgba(255,255,255,.4);
-}
-
-.penalty-button:active {
-    transform: translateY(1px);
-
-    box-shadow:
-        0 3px 6px rgba(0,0,0,.18);
-}
-
-
-
 
 /* ======================================
 CARGO WRAPPER

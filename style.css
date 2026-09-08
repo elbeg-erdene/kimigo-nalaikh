@@ -41,7 +41,7 @@ width:100%;
 
 max-width:440px;
 
-background:white;
+background:transparent;
 
 border-radius:18px;
 
@@ -52,6 +52,7 @@ overflow:hidden;
 min-height:100vh;
 
 }
+
 
 /* ============================= */
 

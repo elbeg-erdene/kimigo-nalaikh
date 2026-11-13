@@ -62,26 +62,25 @@ justify-content:center;
 
 align-items:center;
 width:100%;
-
+overFlow:hidden; 
 margin-top:10px;
 
 margin-bottom:30px;
-   overFlow:hidden; 
+   
 
 }
 
 /* ============================= */
 
 .logo{
+   display: block;
 width: 145px;
-
+ min-width: 145px;
+    flex-shrink: 0;
+ height: auto;
     object-fit: contain;
 
-    animation: elbegSlideOut 4.5s infinite;
-
-    will-change: transform, opacity;
-
-    
+    animation: elbegMoveLeft 4.5s linear infinite;
 
 }
 /* LOGO ANIMATION */
@@ -99,7 +98,7 @@ width: 145px;
     }
 
     100% {
-        transform: translateX(-300px);
+        transform: translateX(-200vw);
         opacity: 0;
     }
 

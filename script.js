@@ -183,29 +183,6 @@ phoneInput.focus();
 
 };
 
-// ==========================================
-// LOGO ANIMATION
-// ==========================================
-
-const logoContainer = document.querySelector(".logo-container");
-
-setInterval(() => {
-
-logoContainer.classList.add("logo-hide");
-
-setTimeout(() => {
-
-const first = logoContainer.children[0];
-const second = logoContainer.children[1];
-
-logoContainer.insertBefore(second, first);
-
-logoContainer.classList.remove("logo-hide");
-
-},1500);
-
-},6000);
-
 
 window.onload = function () {
 

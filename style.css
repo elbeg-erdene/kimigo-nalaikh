@@ -61,40 +61,50 @@ display:flex;
 justify-content:center;
 
 align-items:center;
-
-gap:25px;
+width:100%;
 
 margin-top:10px;
 
 margin-bottom:30px;
+   overFlow:hidden; 
 
 }
 
 /* ============================= */
 
 .logo{
+width: 145px;
 
-transition:.5s;
+    object-fit: contain;
 
-object-fit:contain;
+    animation: elbegSlideOut 4.5s infinite;
+
+    will-change: transform, opacity;
+
+    
+
+}
+/* LOGO ANIMATION */
+
+@keyframes elbegSlideOut {
+
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    66.666% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
 
 }
 
-/* Elbeg */
-
-#elbegLogo{
-
-width:145px;
-
-}
-
-/* Kimigo */
-
-#kimigoLogo{
-
-width:95px;
-
-}
 
 /* ============================= */
 
